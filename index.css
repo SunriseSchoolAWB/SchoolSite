@@ -1,0 +1,246 @@
+@font-face {
+    font-family: quote-font;
+    src: url('RobotoSlab-Medium.ttf');
+}
+@font-face {
+    font-family: section-body-font;
+    src: url('NotoSans-Regular.ttf');
+}
+@font-face {
+    font-family: section-head-font;
+    src: url('NotoTraditionalNushu-Regular.ttf');
+}
+
+body{
+    margin: 0px;
+    background-color: #eff0f4;
+}
+
+a{
+    font-family: section-body-font;
+    font-style: normal;
+    color: black;
+    background-color: #F3EDE7;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#school_name{
+    width: 100%;
+}
+.content-box{
+    padding: 0% 5%;
+    margin: 0%;
+}
+
+#quote{
+    padding: 5% 5% 1% 5%;
+    font-family: quote-font;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+hr{
+    width: 30%;
+    height: 1.5px;
+    align-self: center;
+    background-color: black;
+    border: none;
+}
+
+#intro{
+    padding: 2% 0% 2% 0%;
+    font-family: section-body-font;
+    font-style: normal;
+    color: black;
+}
+
+.courses-box h2{
+    font-family: section-head-font;
+}
+.courses-box p{
+    padding: 2% 0% 2% 0%;
+    font-family: section-body-font;
+    font-style: normal;
+}
+.courses-box .course-card{
+    height: 200px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 1px rgb(0,0,0,0.2);
+}
+.courses-box .course-upper-card{
+    height: 45%;
+    width: 100%;
+    background-color: #C8DEE5;
+    background-size: 200% 100%;
+    border-radius: 20px 20px 0px 0px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: section-body-font;
+    transition: background-position 1s ease-out;
+}
+.courses-box .course-lower-card{
+    background-color: transparent;
+    height: 55%;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    font-family: section-body-font;
+}
+.courses-box .course-lower-card label{
+    margin: 1px 0px;
+    display: inline-block;
+}
+.courses-box #course-current-card{
+    background-color: transparent;
+    height: 60px;
+    width: 60px;
+    border: 3px solid;
+    border-color: #4C6D93;
+    border-radius: 100%;
+    text-align: center;
+    font-family: section-head-font;
+}
+.courses-box #course-current-card p{
+    color:#4C6D93;
+    font-weight: bold;
+}
+.courses-box button{
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    display: inline-flex;
+    background-color: transparent;
+    transition: background-color 0.7s border-color 0.7s;
+    align-items: center;
+    justify-content: center;
+}
+.courses-box button:active{
+    background-color: #0000001a;
+    border-color: #00000085;
+}
+
+.uniqueness-box h2{
+    font-family: section-head-font;
+}
+.uniqueness-card{
+    width: 96%;
+    display: flex;
+    margin: 0px;
+    overflow-x:auto;
+    padding: 0px 5px;
+}
+.uniqueness-card::-webkit-scrollbar{
+    height: 5px;
+}
+.uniqueness-card::-webkit-scrollbar-thumb{
+    background-color: #7B532F;
+    border-radius: 100vw;
+}
+.uniqueness-card::-webkit-scrollbar-track{
+    background-color: #F3EDE7;
+    border-radius: 100vw;
+    margin: 0 25vw;
+}
+@supports (scrollbar-color: red blue){
+    .uniqueness-card{
+        scrollbar-color: #7B532F #F3EDE7;
+        scrollbar-width: thin;
+    }
+}
+.uniqueness-card .unique-cards{
+    min-width: 75vw;
+    height:fit-content;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px 15px;
+}
+.uniqueness-card ul{
+    padding: 0px;
+}
+.uniqueness-card li{
+    list-style: none;
+}
+.uniqueness-card li:nth-child(1):before{
+    content: "\2B24";
+    color: #F8C700;
+    padding: 0px 10px 0px 0px;
+}
+.uniqueness-card li:nth-child(2):before{
+    content: "\2B24";
+    color: #4075FF;
+    padding: 0px 10px 0px 0px;
+}
+.uniqueness-card li:nth-child(3):before{
+    content: "\2B24";
+    color: #FF5B5B;
+    padding: 0px 10px 0px 0px;
+}
+.uniqueness-card img{
+    width: 100%;
+    height: auto;
+    image-rendering: auto;
+    border-radius: 20px;
+    border: none;
+    margin: 0px;
+}
+.uniqueness-card h4, .uniqueness-card p, .uniqueness-card li{
+    font-family: section-body-font;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.timeline-wrapper-box h2{
+    font-family: section-head-font;
+}
+.timeline-wrapper-box p, .timeline-wrapper-box h4{
+    margin: 10px;
+    font-family: section-body-font;
+}
+.timeline-box{
+    padding: 0px 10px;
+}
+.timeline-box .event-wrapper-box{
+    border-left: 2px solid #7B532F;
+    padding: 0px;
+    margin: 0px;
+}
+.timeline-box .event-box{
+    padding: 0px 10px 10px 30px;
+}
+.timeline-box .event-wrapper-box:before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #7B532F;
+    position: relative;
+    right: 8.75px;
+    top: 40px;
+}
+.timeline-box .event-details-box{
+    background-color: #F3EDE7;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.contact-box h2{
+    font-family: section-head-font;
+}
+.contact-box p{
+    font-family: section-body-font;
+}
+
+
