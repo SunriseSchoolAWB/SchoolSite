@@ -1,0 +1,47 @@
+@font-face {
+    font-family: quote-font;
+    src: url('RobotoSlab-Medium.ttf');
+}
+@font-face {
+    font-family: section-body-font;
+    src: url('NotoSans-Regular.ttf');
+}
+@font-face {
+    font-family: section-head-font;
+    src: url('NotoTraditionalNushu-Regular.ttf');
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.school-name-box{
+    padding: 15px 10px;
+    margin: 0px;
+    width: 100%;
+    height: fit-content;
+    background-color: #2860A8;
+    font-family: section-head-font;
+}
+.school-name-box .school-logo{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.school-name-box .school-name{
+    display: inline-block;
+    height: 100%;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.school-name-box .school-name h4, .school-name-box .school-name h2{
+    margin: 0px;
+    padding: 2px;
+}
+
+
+.content-box{
+    padding: 0% 5%;
+    margin: 0%;
+}

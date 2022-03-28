@@ -13,7 +13,7 @@
 
 body{
     margin: 0px;
-    background-color: #eff0f4;
+    padding: 0px;
 }
 
 a{
@@ -116,7 +116,7 @@ hr{
     height: 50px;
     width: 50px;
     font-size: x-large;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 100%;
     display: inline-flex;
     background-color: transparent;
@@ -241,6 +241,13 @@ hr{
 }
 .contact-box p{
     font-family: section-body-font;
+}
+
+.blank-bottom-box{
+    height: 30vw;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
 }
 
 
