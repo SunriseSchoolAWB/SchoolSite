@@ -240,7 +240,7 @@ hr{
     border: 5px solid var(--accent-font-color);
     background-color: white;
     position: relative;
-    right: 8.85px;
+    right: 8.75px;
     top: 40px;
     box-shadow: 0px 2px 2px 1px rgb(0,0,0,0.2);
 }
