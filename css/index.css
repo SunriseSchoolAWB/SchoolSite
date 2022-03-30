@@ -14,8 +14,8 @@
 :root{
     --header-color: #253764;
     --header-font-color: white;
-    --accent-color: #cddbb8;
-    --accent-color-bg: #cddbb8;
+    --accent-color: #d7dfca;
+    --accent-color-bg: #d7dfca;
     --accent-font-color: #344b0f;
 }
 
@@ -86,7 +86,7 @@ hr{
     box-shadow: 0px 5px 5px 1px rgb(0,0,0,0.2);
 }
 .courses-box .course-upper-card{
-    height: 45%;
+    height: 55%;
     width: 100%;
     background-color: #C8DEE5;
     background-size: 200% 100%;
@@ -99,7 +99,7 @@ hr{
 }
 .courses-box .course-lower-card{
     background-color: transparent;
-    height: 55%;
+    height: 45%;
     border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
@@ -242,6 +242,7 @@ hr{
     position: relative;
     right: 8.85px;
     top: 40px;
+    box-shadow: 0px 2px 2px 1px rgb(0,0,0,0.2);
 }
 .timeline-box .event-details-box{
     background-color: var(--accent-color-bg);
