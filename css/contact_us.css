@@ -1,14 +1,14 @@
 @font-face {
     font-family: quote-font;
-    src: url('RobotoSlab-Medium.ttf');
+    src: url('../assets/RobotoSlab-Medium.ttf');
 }
 @font-face {
     font-family: section-body-font;
-    src: url('NotoSans-Regular.ttf');
+    src: url('../assets/NotoSans-Regular.ttf');
 }
 @font-face {
     font-family: section-head-font;
-    src: url('NotoTraditionalNushu-Regular.ttf');
+    src: url('../assets/NotoTraditionalNushu-Regular.ttf');
 }
 
 body{
