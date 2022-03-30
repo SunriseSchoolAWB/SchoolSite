@@ -11,18 +11,31 @@
     src: url('../assets/NotoTraditionalNushu-Regular.ttf');
 }
 
+:root{
+    --header-color: #253764;
+    --header-font-color: white;
+    --accent-color: #cddbb8;
+    --accent-color-bg: #cddbb8;
+    --accent-font-color: #344b0f;
+}
+
 body{
     margin: 0px;
     padding: 0px;
 }
 
-a{
+.link-button{
     font-family: section-body-font;
     font-style: normal;
-    color: black;
-    background-color: #F3EDE7;
-    padding: 2px 5px;
+    color: var(--accent-font-color);
+    background-color: var(--accent-color-bg);
+    padding: 10px;
     border: none;
+    border-radius: 10px;
+    margin: 0px;
+}
+.link-button-inline{
+    padding: 2px 5px;
     border-radius: 5px;
 }
 
@@ -143,17 +156,17 @@ hr{
     height: 5px;
 }
 .uniqueness-card::-webkit-scrollbar-thumb{
-    background-color: #7B532F;
+    background-color: var(--accent-font-color);
     border-radius: 100vw;
 }
 .uniqueness-card::-webkit-scrollbar-track{
-    background-color: #F3EDE7;
+    background-color: var(--accent-color-bg);
     border-radius: 100vw;
     margin: 0 25vw;
 }
 @supports (scrollbar-color: red blue){
     .uniqueness-card{
-        scrollbar-color: #7B532F #F3EDE7;
+        scrollbar-color: var(--accent-font-color) var(--accent-color-bg);
         scrollbar-width: thin;
     }
 }
@@ -211,7 +224,7 @@ hr{
     padding: 0px 10px;
 }
 .timeline-box .event-wrapper-box{
-    border-left: 2px solid #7B532F;
+    border-left: 2px solid var(--accent-font-color);
     padding: 0px;
     margin: 0px;
 }
@@ -224,13 +237,13 @@ hr{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #7B532F;
+    background-color: var(--accent-font-color);
     position: relative;
     right: 8.75px;
     top: 40px;
 }
 .timeline-box .event-details-box{
-    background-color: #F3EDE7;
+    background-color: var(--accent-color-bg);
     padding: 5px 10px;
     border: none;
     border-radius: 20px;

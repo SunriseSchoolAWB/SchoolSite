@@ -25,17 +25,6 @@ body{
     width: 100vw;
 }
 
-.link-button{
-    font-family: section-body-font;
-    font-style: normal;
-    color: var(--accent-font-color);
-    background-color: var(--accent-color-bg);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    margin: 0px;
-}
-
 .school-name-box{
     padding: 15px 10px;
     margin: 0px;
@@ -59,65 +48,45 @@ body{
     padding: 2px;
 }
 
+.principal-photo-box{
+    margin: 0px;
+    padding: 0px;
+    height: 250px;
+    width: 100%;
+    background-image: url("../assets/playground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.principal-photo-box div{
+    margin: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #00000077;
+}
+.principal-photo-box h2{
+    padding: 15px 0px 15px 15px;
+    margin: 0px;
+    color: var(--header-font-color);
+    font-family: section-head-font;
+}
+/*C:\Users\vedan\Pictures\Camera Roll\WIN_20220330_21_01_07_Pro.jpg*/
 .content-box{
     padding: 0% 5%;
     margin: 0%;
     border: none;
 }
 
-.faqs-box h2{
-    font-family: section-head-font;
-}
-.faqs-box p{
-    font-family: section-body-font;
-}
-.question-box{
-    margin: 10px 0px;
-}
-.question-box .question{
-    background-color: whitesmoke;
-    color: black;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0px;
-    text-align: left;
-    border: none;
-    transition: background-color 0.4s;
-    width: 100%;
-    font-family: section-body-font;
-    border-radius: 10px;
-    box-shadow: 0px 2px 2px 1px rgb(0,0,0,0.2);
-}
-.question-box .active, .question-box .question:hover{
-background-color: #ececec;
-}
-.question-box .question:after{
-content: "\1F783";
-float: right;  
-}
-.question-box .active:after{
-content: "\1F781";
-}
-.question-box .answer{
-padding: 0px 20px;
-margin: 0px;
-background-color: white;
-display: none;
-}
-
-.contact-link-box{
-    height: fit-content;
-}
-.contact-link-box h2{
-    font-family: section-head-font;
-}
-.contact-link-box p{
+.word-box p{
     font-family: section-body-font;
 }
 
 .blank-bottom-box{
-height: 30vw;
-padding: 0px;
-margin: 0px;
-width: 100%;
+    height: 30vw;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
 }

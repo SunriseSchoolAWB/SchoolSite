@@ -1,11 +1,11 @@
 const courses = ['UKG', 'LKG', '1', '2', '3', '4'];
 const course_info = {
     'UKG': {'age': 5, 'color1': '#4C6D93', 'color2':'#C8DEE5'},
-    'LKG': {'age': 6, 'color1': '#574C9A', 'color2':'#E0DBFF'},
+    'LKG': {'age': 6, 'color1': '#846446', 'color2':'#E7D6C7'},
     '1': {'age': 7, 'color1': '#4A8069', 'color2':'#CEE8E3'},
     '2': {'age': 8, 'color1': '#7C447D', 'color2':'#EBD5EC'},
     '3': {'age': 9, 'color1': '#79413E', 'color2':'#E9D2D0'},
-    '4': {'age': 10, 'color1': '#846446', 'color2':'#E7D6C7'}
+    '4': {'age': 10, 'color1': '#574C9A', 'color2':'#E0DBFF'}
 };
 var month_list = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -53,8 +53,9 @@ async function beginLoading(){
             <div class="event-wrapper-box">
                 <div class="event-box">
                     <div class="event-details-box">
-                        <h4>`+event_date_str+` | `+element["name"]+` | `+duration_str+`</h4>
-                        <p>`+element["description"]+`</p>
+                        <h4>`+element["name"]+`</h4>
+                        <p>`+event_date_str+` | `+duration_str+`<br>
+                        `+element["description"]+`</p>
                     </div>
                 </div>
             </div>
