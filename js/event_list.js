@@ -11,15 +11,15 @@ var event_list = [
         "description": "what do we do on this day"
     },
     {
-        "date": "31-03",
-        "name": "Event 2",
-        "duration": 4,
-        "description": "what do we do on this day"
-    },
-    {
         "date": "10-04",
         "name": "Event 3",
         "duration": 0,
+        "description": "what do we do on this day"
+    },
+    {
+        "date": "31-03",
+        "name": "Event 2",
+        "duration": 4,
         "description": "what do we do on this day"
     },
     {

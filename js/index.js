@@ -18,6 +18,18 @@ async function beginLoading(){
     var today = new Date();
     today = (today.getMonth()+1)*100+today.getDate();
 
+    function dateCompareForSort(a, b){
+        var a_date = a["date"].split("-");
+        var a_date_int = parseInt(a_date[1])*100 + parseInt(a_date[0]);
+
+        var b_date = b["date"].split("-");
+        var b_date_int = parseInt(b_date[1])*100 + parseInt(b_date[0]);
+
+        return a_date_int - b_date_int;
+    }
+
+    event_list.sort(dateCompareForSort);
+
     var upcoming_events_html = ``;
     event_list.forEach(element => {
 

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: quote-font;
+    src: url('RobotoSlab-Medium.ttf');
+}
+@font-face {
+    font-family: section-body-font;
+    src: url('NotoSans-Regular.ttf');
+}
+@font-face {
+    font-family: section-head-font;
+    src: url('NotoTraditionalNushu-Regular.ttf');
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+a{
+    font-family: section-body-font;
+    font-style: normal;
+    color: black;
+    background-color: #F3EDE7;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.school-name-box{
+    padding: 15px 10px;
+    margin: 0px;
+    height: fit-content;
+    background-color: #2860A8;
+    font-family: section-head-font;
+}
+.school-name-box .school-logo{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.school-name-box .school-name{
+    display: inline-block;
+    height: 100%;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.school-name-box .school-name h4, .school-name-box .school-name h2{
+    margin: 0px;
+    padding: 2px;
+}
+
+.content-box{
+    padding: 0% 5%;
+    margin: 0%;
+    border: none;
+}
+
+.faqs-box h2{
+    font-family: section-head-font;
+}
+.faqs-box p{
+    font-family: section-body-font;
+}
+.question-box{
+    margin: 10px 0px;
+}
+.question{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px;
+    text-align: left;
+    border: none;
+    transition: background-color 0.4s;
+    width: 100%;
+    font-family: section-body-font;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px rgb(0,0,0,0.2);
+}
+.active, .question:hover{
+background-color: #ececec;
+}
+.question:after{
+content: "\1F783";
+float: right;  
+}
+.active:after{
+content: "\1F781";
+}
+.question-box .answer{
+padding: 0px 20px;
+margin: 0px;
+background-color: white;
+display: none;
+}
+
+.contact-link-box h2{
+    font-family: section-head-font;
+}
+.contact-link-box p{
+    font-family: section-body-font;
+}
+
+.blank-bottom-box{
+height: 30vw;
+padding: 0px;
+margin: 0px;
+width: 100%;
+}
