@@ -234,12 +234,13 @@ hr{
 .timeline-box .event-wrapper-box:before{
     content: '';
     display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--accent-font-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 60%;
+    border: 5px solid var(--accent-font-color);
+    background-color: white;
     position: relative;
-    right: 8.75px;
+    right: 8.85px;
     top: 40px;
 }
 .timeline-box .event-details-box{
