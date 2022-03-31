@@ -41,7 +41,6 @@ body{
     display: inline-block;
     height: 100%;
     color: var(--header-font-color);
-    letter-spacing: 0.5px;
 }
 .school-name-box .school-name h4, .school-name-box .school-name h2{
     margin: 0px;

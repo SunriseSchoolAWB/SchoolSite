@@ -22,6 +22,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 
 .link-button{
@@ -42,6 +43,7 @@ body{
 #school_name{
     width: 100%;
 }
+
 .content-box{
     padding: 0% 5%;
     margin: 0%;
@@ -86,7 +88,7 @@ hr{
     box-shadow: 0px 5px 5px 1px rgb(0,0,0,0.2);
 }
 .courses-box .course-upper-card{
-    height: 55%;
+    height: 60%;
     width: 100%;
     background-color: #C8DEE5;
     background-size: 200% 100%;
@@ -99,7 +101,7 @@ hr{
 }
 .courses-box .course-lower-card{
     background-color: transparent;
-    height: 45%;
+    height: 40%;
     border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
@@ -120,6 +122,7 @@ hr{
     border-radius: 100%;
     text-align: center;
     font-family: section-head-font;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.1);
 }
 .courses-box #course-current-card p{
     color:#4C6D93;
@@ -216,12 +219,15 @@ hr{
 .timeline-wrapper-box h2{
     font-family: section-head-font;
 }
-.timeline-wrapper-box p, .timeline-wrapper-box h4{
+.timeline-wrapper-box p{
+    font-family: section-body-font;
+}
+.event-wrapper-box p, .timeline-wrapper-box h4{
     margin: 10px;
     font-family: section-body-font;
 }
 .timeline-box{
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 .timeline-box .event-wrapper-box{
     border-left: 2px solid var(--accent-font-color);
@@ -229,7 +235,7 @@ hr{
     margin: 0px;
 }
 .timeline-box .event-box{
-    padding: 0px 10px 10px 30px;
+    padding: 0px 10px 10px 20px;
 }
 .timeline-box .event-wrapper-box:before{
     content: '';
@@ -256,6 +262,21 @@ hr{
 }
 .contact-box p{
     font-family: section-body-font;
+}
+
+.admission-enquiry-box{
+    position: fixed;
+    z-index: 999;
+    margin: 0px;
+    padding: 10px 5px;
+    font-family: section-body-font;
+    height: fit-content;
+    width: 100%;
+    bottom: 0px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blank-bottom-box{
