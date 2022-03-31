@@ -58,6 +58,11 @@ body{
     padding: 2px;
 }
 
+hr{
+    margin: 0px 0px 15px 0px;
+    height: 1px;
+}
+
 .content-box{
     padding: 0% 5%;
     margin: 0%;
