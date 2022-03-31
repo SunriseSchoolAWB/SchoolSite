@@ -3,6 +3,11 @@
 //duration: event duration
 //description: event description
 
+var admission_period = {
+    "start_date": "01-02",
+    "end_date": "28-06"
+};
+
 var event_list = [
     {
         "date": "10-03",

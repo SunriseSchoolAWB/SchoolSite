@@ -12,6 +12,16 @@ const course_info = {
 };
 var month_list = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+function dateCompareForSort(a, b){
+    var a_date = a["date"].split("-");
+    var a_date_int = parseInt(a_date[1])*100 + parseInt(a_date[0]);
+
+    var b_date = b["date"].split("-");
+    var b_date_int = parseInt(b_date[1])*100 + parseInt(b_date[0]);
+
+    return a_date_int - b_date_int;
+}
+
 window.onload = beginLoading;
 
 async function beginLoading(){
@@ -21,21 +31,19 @@ async function beginLoading(){
     var today = new Date();
     today = (today.getMonth()+1)*100+today.getDate();
 
-    function dateCompareForSort(a, b){
-        var a_date = a["date"].split("-");
-        var a_date_int = parseInt(a_date[1])*100 + parseInt(a_date[0]);
+    var admission_date = admission_period["start_date"].split("-");
+    var admission_start_date = parseInt(admission_date[1])*100 + parseInt(admission_date[0]);
+    admission_date = admission_period["end_date"].split("-");
+    var admission_end_date = parseInt(admission_date[1])*100 + parseInt(admission_date[0]);
 
-        var b_date = b["date"].split("-");
-        var b_date_int = parseInt(b_date[1])*100 + parseInt(b_date[0]);
-
-        return a_date_int - b_date_int;
+    if (today < admission_end_date && today > admission_start_date){
+        document.getElementsByClassName("admission-enquiry-box")[0].style.display = "flex";
     }
 
     event_list.sort(dateCompareForSort);
 
     var upcoming_events_html = ``;
     event_list.forEach(element => {
-
         var event_date = element["date"].split("-");
         var event_date_int = parseInt(event_date[1])*100 + parseInt(event_date[0]);
 
