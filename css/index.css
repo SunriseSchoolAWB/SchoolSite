@@ -26,16 +26,22 @@ body{
 }
 
 .link-button{
-    font-family: section-body-font;
-    font-style: normal;
-    color: var(--accent-font-color);
     background-color: var(--accent-color-bg);
     padding: 10px;
     border: none;
     border-radius: 10px;
     margin: 0px;
 }
+.link-button a{
+    font-family: section-body-font;
+    font-style: normal;
+    color: var(--accent-font-color);
+}
 .link-button-inline{
+    background-color: var(--accent-color-bg);
+    font-family: section-body-font;
+    font-style: normal;
+    color: var(--accent-font-color);
     padding: 2px 5px;
     border-radius: 5px;
 }
@@ -128,7 +134,7 @@ hr{
     color:#4C6D93;
     font-weight: bold;
 }
-.courses-box button{
+.courses-box .course-nav-button{
     height: 50px;
     width: 50px;
     font-size: x-large;
@@ -140,7 +146,7 @@ hr{
     align-items: center;
     justify-content: center;
 }
-.courses-box button:active{
+.courses-box .course-nav-button:active{
     background-color: #0000001a;
     border-color: #00000085;
 }
@@ -273,7 +279,7 @@ hr{
     height: fit-content;
     width: 100%;
     bottom: 0px;
-    background-color: rgba(245, 245, 245, 0.9);
+    background-color: whitesmoke;
     display: none;
     align-items: center;
     justify-content: center;
