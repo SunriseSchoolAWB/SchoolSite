@@ -21,7 +21,7 @@
         <div class="faqs-box">
             <h2>FAQs</h2>
             <div class="question-box">
-                <button class="question">Q. Is online education needed for pre primary?</button>
+                <button class="question" onclick="expand_answer(this)">Q. Is online education needed for pre primary?</button>
                 <div class="answer">
                     <p>Ans: If one’s point of view is only towards syllabus and study completion then it
                         may not be needed that much but for pre primary student , the attachment
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="question-box">
-                <button class="question">Q. Is the Online school will be conducted same like traditional
+                <button class="question" onclick="expand_answer(this)">Q. Is the Online school will be conducted same like traditional
                     school?</button>
                 <div class="answer">
                     <p>Ans : Not exactly the same but the school is taking efforts to conduct it in
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="question-box">
-                <button class="question">Q. Does all of the school work completed online?</button>
+                <button class="question" onclick="expand_answer(this)">Q. Does all of the school work completed online?</button>
                 <div class="answer">
                     <p>Ans: The online schooling hours will be divided into online and offline activities
                         both.</p>
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="question-box">
-                <button class="question">Q. What can be the advantage of Online Schooling?</button>
+                <button class="question" onclick="expand_answer(this)">Q. What can be the advantage of Online Schooling?</button>
                 <div class="answer">
                     <p>Ans : Parents can better understand the growth and problems of the student
                         while learning. They can also crosscheck the teaching methodology and
@@ -66,7 +66,7 @@
         <div class="contact-link-box">
             <h2>Still unanswered...?</h2>
             <p>Send us your question and we will get back to you.</p>
-            <button class="link-button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeZrfxxQH1sOtSh2Q56mbRpN3BAwX1stryq6Z8GWe9vF18GQ/viewform?usp=sf_link"><b>Contact form</b></a></button>
+            <button class="link-button" onclick="contact_us_redirect()"><b>Contact form</b></button>
         </div>
         <div class="blank-bottom-box">
 
@@ -75,13 +75,8 @@
 
 
     <script>
-        var acc = document.getElementsByClassName("question");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
+        function expand_answer(clicked_element) {
+            var panel = clicked_element.nextElementSibling;
             if (panel.style.display === "block") {
             panel.style.display = "none";
             panel.style.height = '0px';
@@ -89,7 +84,10 @@
             panel.style.display = "block";
             panel.style.height = 'fit-content';
             }
-        });
+        }
+
+        function contact_us_redirect(){
+            location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdeZrfxxQH1sOtSh2Q56mbRpN3BAwX1stryq6Z8GWe9vF18GQ/viewform?usp=sf_link"
         }
     </script>
 </body>

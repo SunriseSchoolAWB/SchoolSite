@@ -31,11 +31,14 @@ body{
     border: none;
     border-radius: 10px;
     margin: 0px;
-}
-.link-button a{
     font-family: section-body-font;
     font-style: normal;
     color: var(--accent-font-color);
+    transition: background-color 0.4s;
+}
+.link-button:active{
+    color: var(--accent-color-bg);
+    background-color: var(--accent-font-color);
 }
 .link-button-inline{
     background-color: var(--accent-color-bg);
@@ -283,15 +286,13 @@ hr{
     display: none;
     align-items: center;
     justify-content: center;
-    border: 0.5px solid var(--header-color);
+    border: 0.8px solid var(--accent-font-color);
     border-radius: 20px 20px 0px 0px;
     font-weight: bold;
     font-size: 0.85rem;
 }
 .admission-enquiry-box .admission-enquiry-btn{
-    background-color: var(--header-color);
     display: inline-block;
-    color: var(--header-font-color);
     padding: 10px 15px;
     margin: 0px 15px;
     border: none;

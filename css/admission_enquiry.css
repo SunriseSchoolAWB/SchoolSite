@@ -31,11 +31,14 @@ body{
     border: none;
     border-radius: 10px;
     margin: 0px;
-}
-.link-button a{
     font-family: section-body-font;
     font-style: normal;
     color: var(--accent-font-color);
+    transition: background-color 0.4s;
+}
+.link-button:active{
+    color: var(--accent-color-bg);
+    background-color: var(--accent-font-color);
 }
 
 .school-name-box{
