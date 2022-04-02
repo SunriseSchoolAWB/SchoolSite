@@ -260,6 +260,7 @@ hr{
     height: 50vh;
     width: fit-content;
     object-fit: contain;
+    margin: 0px 10px;
 }
 .activities-photos-box .activities-cards .activity-name{
     font-family: section-body-font;
