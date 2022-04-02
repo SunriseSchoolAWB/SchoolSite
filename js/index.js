@@ -89,7 +89,6 @@ function selectCourse(dir){
     var current_course_name = current_course.getAttribute('name');
     var current_course_index = courses.indexOf(current_course_name);
     if (current_course_index+dir >= 0 && current_course_index+dir < courses.length){
-        console.log(current_course_index);
         if (current_course_index+dir > 0){
             document.getElementById("course-card-left-svg").style.setProperty("display", "inline-flex");
             document.getElementById("course-card-left-button").disabled = false;

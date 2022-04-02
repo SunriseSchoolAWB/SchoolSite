@@ -149,7 +149,7 @@ hr{
     align-items: center;
     justify-content: center;
 }
-.courses-box .course-nav-button:active{
+.courses-box .course-nav-button:enabled:active{
     background-color: #0000001a;
     border-color: #00000085;
 }
@@ -260,15 +260,15 @@ hr{
     height: 50vh;
     width: fit-content;
     object-fit: contain;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-    padding: 10px;
 }
 .activities-photos-box .activities-cards .activity-name{
     font-family: section-body-font;
     font-weight: bold;
-    margin: 5px 0px 10px 0px;
-    padding: 5px 15px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
 }
 
 .timeline-wrapper-box h2{
