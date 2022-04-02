@@ -63,13 +63,6 @@ body{
     padding: 2px;
 }
 
-hr{
-    margin: 0px 0px 15px 0px;
-    background-color: black;
-    height: 1px;
-    border: none;
-}
-
 .content-box{
     padding: 0% 5%;
     margin: 0%;
@@ -101,8 +94,13 @@ hr{
     font-size: 0.9rem;
 }
 .question-box .question:active{
-background-color: gray;
-color: whitesmoke;
+    background-color: gray;
+    color: whitesmoke;
+}
+.question-box .active{
+    background-color: hsl(0, 0%, 90%);
+    color: black;
+    box-shadow: none;
 }
 .question-box .question:after{
 content: "+";
@@ -114,11 +112,12 @@ content: "\2212";
 font-size: 1.5em;
 }
 .question-box .answer{
-padding: 0px 20px;
-margin: 0px;
+padding: 0px 15px;
+margin: 0px 10px;
 background-color: white;
 display: none;
 font-size: 0.9rem;
+border-left: 3px solid grey;
 }
 
 .contact-link-box{
