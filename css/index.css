@@ -236,7 +236,6 @@ hr{
     display: flex;
     margin: 5px 0px;
     overflow-x:auto;
-    padding: 0px 5px;
 }
 .activities-photos-box::-webkit-scrollbar{
     height: 5px;
@@ -256,10 +255,29 @@ hr{
         scrollbar-width: thin;
     }
 }
-.activities-photos-box .activities-cards img{
+.activities-photos-box #cultural_events{
+    background-image: url("../assets/cultural_events.png");
+    background-size: contain;
     height: 50vh;
-    object-fit: contain;
     margin: 0px 10px;
+    width: calc(calc(1062 * 50vh) / 512);
+    background-repeat: no-repeat;
+}
+.activities-photos-box #awareness_events{
+    background-image: url("../assets/awareness_events.png");
+    background-size: contain;
+    height: 50vh;
+    margin: 0px 10px;
+    width: calc(calc(975 * 50vh) / 512);
+    background-repeat: no-repeat;
+}
+.activities-photos-box #science_week{
+    background-image: url("../assets/science_week.png");
+    background-size: contain;
+    height: 50vh;
+    margin: 0px 10px;
+    width: calc(calc(1521 * 50vh) / 512);
+    background-repeat: no-repeat;
 }
 .activities-photos-box .activities-cards .activity-name{
     font-family: section-body-font;
