@@ -1,14 +1,6 @@
 @font-face {
-    font-family: quote-font;
-    src: url('../assets/RobotoSlab-Medium.ttf');
-}
-@font-face {
     font-family: section-body-font;
-    src: url('../assets/NotoSans-Regular.ttf');
-}
-@font-face {
-    font-family: section-head-font;
-    src: url('../assets/NotoTraditionalNushu-Regular.ttf');
+    src: url('../assets/OpenSans-Regular.ttf');
 }
 
 :root{
@@ -17,6 +9,7 @@
     --accent-color: #e2e7da;
     --accent-color-bg: #e2e7da;
     --accent-font-color: #344b0f;
+    --section-font: section-body-font;
 }
 
 body{
@@ -30,7 +23,7 @@ body{
     margin: 0px;
     height: fit-content;
     background-color: var(--header-color);
-    font-family: section-head-font;
+    font-family: var(--section-font);
 }
 .school-name-box .school-logo{
     display: inline-block;
@@ -70,7 +63,7 @@ body{
     padding: 15px 0px 15px 15px;
     margin: 0px;
     color: var(--header-font-color);
-    font-family: section-head-font;
+    font-family: var(--section-font);
 }
 
 .content-box{
@@ -80,7 +73,7 @@ body{
 }
 
 .word-box p{
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 
 .blank-bottom-box{

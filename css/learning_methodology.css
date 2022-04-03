@@ -16,22 +16,7 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100vw;
-}
-
-.link-button{
-    background-color: var(--accent-color-bg);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    margin: 0px;
     font-family: var(--section-font);
-    font-style: normal;
-    color: var(--accent-font-color);
-    transition: background-color 0.4s;
-}
-.link-button:active{
-    color: var(--accent-color-bg);
-    background-color: var(--accent-font-color);
 }
 
 .school-name-box{
@@ -39,7 +24,6 @@ body{
     margin: 0px;
     height: fit-content;
     background-color: var(--header-color);
-    font-family: var(--section-font);
 }
 .school-name-box .school-logo{
     display: inline-block;
@@ -60,15 +44,12 @@ body{
     padding: 0% 5%;
     margin: 0%;
     border: none;
-    font-family: var(--section-font);
 }
 
-.admission-enquiry-box h3{
-    font-family: var(--section-font);
-}
-
-.admission-box h3{
-    font-family: var(--section-font);
+.learning-methodology-box h3{
+    border-left: 3px solid var(--accent-font-color);
+    margin: 15px 0px;
+    padding: 5px 5px 5px 10px;
 }
 
 .blank-bottom-box{

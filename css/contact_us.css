@@ -1,14 +1,6 @@
 @font-face {
-    font-family: quote-font;
-    src: url('../assets/RobotoSlab-Medium.ttf');
-}
-@font-face {
     font-family: section-body-font;
-    src: url('../assets/NotoSans-Regular.ttf');
-}
-@font-face {
-    font-family: section-head-font;
-    src: url('../assets/NotoTraditionalNushu-Regular.ttf');
+    src: url('../assets/OpenSans-Regular.ttf');
 }
 
 :root{
@@ -17,6 +9,7 @@
     --accent-color: #e2e7da;
     --accent-color-bg: #e2e7da;
     --accent-font-color: #344b0f;
+    --section-font: section-body-font;
 }
 
 body{
@@ -31,7 +24,7 @@ body{
     border: none;
     border-radius: 10px;
     margin: 0px;
-    font-family: section-body-font;
+    font-family: var(--section-font);
     font-style: normal;
     color: var(--accent-font-color);
     transition: background-color 0.4s;
@@ -46,7 +39,7 @@ body{
     margin: 0px;
     height: fit-content;
     background-color: var(--header-color);
-    font-family: section-head-font;
+    font-family: var(--section-font);
 }
 .school-name-box .school-logo{
     display: inline-block;
@@ -69,11 +62,11 @@ body{
     border: none;
 }
 
-.faqs-box h2{
-    font-family: section-head-font;
+.faqs-box h3{
+    font-family: var(--section-font);
 }
 .faqs-box p{
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 .question-box{
     margin: 10px 0px;
@@ -88,7 +81,7 @@ body{
     border: none;
     transition: background-color 0.4s;
     width: 100%;
-    font-family: section-body-font;
+    font-family: var(--section-font);
     border-radius: 10px;
     box-shadow: 0px 2px 2px 1px rgb(0,0,0,0.2);
     font-size: 0.9rem;
@@ -129,11 +122,11 @@ border-left: 3px solid grey;
 .contact-link-box{
     height: fit-content;
 }
-.contact-link-box h2{
-    font-family: section-head-font;
+.contact-link-box h3{
+    font-family: var(--section-font);
 }
 .contact-link-box p{
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 
 .blank-bottom-box{

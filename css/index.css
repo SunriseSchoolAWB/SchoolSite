@@ -4,11 +4,7 @@
 }
 @font-face {
     font-family: section-body-font;
-    src: url('../assets/NotoSans-Regular.ttf');
-}
-@font-face {
-    font-family: section-head-font;
-    src: url('../assets/NotoTraditionalNushu-Regular.ttf');
+    src: url('../assets/OpenSans-Regular.ttf');
 }
 
 :root{
@@ -17,6 +13,7 @@
     --accent-color: #e2e7da;
     --accent-color-bg: #e2e7da;
     --accent-font-color: #344b0f;
+    --section-font: section-body-font;
 }
 
 body{
@@ -31,7 +28,7 @@ body{
     border: none;
     border-radius: 10px;
     margin: 0px;
-    font-family: section-body-font;
+    font-family: var(--section-font);
     font-style: normal;
     color: var(--accent-font-color);
     transition: background-color 0.4s;
@@ -42,7 +39,7 @@ body{
 }
 .link-button-inline{
     background-color: var(--accent-color-bg);
-    font-family: section-body-font;
+    font-family: var(--section-font);
     font-style: normal;
     color: var(--accent-font-color);
     padding: 2px 5px;
@@ -77,17 +74,17 @@ hr{
 
 #intro{
     padding: 2% 0% 2% 0%;
-    font-family: section-body-font;
+    font-family: var(--section-font);
     font-style: normal;
     color: black;
 }
 
 .courses-box h2{
-    font-family: section-head-font;
+    font-family:var(--section-font);
 }
 .courses-box p{
     padding: 2% 0% 2% 0%;
-    font-family: section-body-font;
+    font-family: var(--section-font);
     font-style: normal;
 }
 .courses-box .course-card{
@@ -105,7 +102,7 @@ hr{
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
-    font-family: section-body-font;
+    font-family: var(--section-font);
     transition: background-position 1s ease-out;
 }
 .courses-box .course-lower-card{
@@ -116,7 +113,7 @@ hr{
     align-items: center;
     justify-content: center;
     text-align:center;
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 .courses-box .course-lower-card label{
     margin: 1px 0px;
@@ -130,7 +127,7 @@ hr{
     border-color: #4C6D93;
     border-radius: 100%;
     text-align: center;
-    font-family: section-head-font;
+    font-family: var(--section-font);
     box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.1);
 }
 .courses-box #course-current-card p{
@@ -155,7 +152,7 @@ hr{
 }
 
 .uniqueness-box h2{
-    font-family: section-head-font;
+    font-family: var(--section-font);
 }
 .uniqueness-card{
     width: 96%;
@@ -220,22 +217,22 @@ hr{
     margin: 0px;
 }
 .uniqueness-card h4, .uniqueness-card p, .uniqueness-card li{
-    font-family: section-body-font;
+    font-family: var(--section-font);
     margin: 0px;
     padding: 5px 0px;
 }
 
 .activities-box h2{
-    font-family: section-head-font;
+    font-family: var(--section-font);
 }
 .activities-box p{
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 .activities-photos-box{
     width: 96%;
     display: flex;
     margin: 5px 0px;
-    overflow-x:auto;
+    overflow-x: auto;
 }
 .activities-photos-box::-webkit-scrollbar{
     height: 5px;
@@ -256,47 +253,55 @@ hr{
     }
 }
 .activities-photos-box #cultural_events{
-    background-image: url("../assets/cultural_events.png");
+    background-image: url("../assets/cultural_events.jpg");
     background-size: contain;
-    height: 50vh;
+    height: 40vh;
     margin: 0px 10px;
-    width: calc(calc(1062 * 50vh) / 512);
+    width: calc(calc(706 * 40vh) / 480);
     background-repeat: no-repeat;
 }
 .activities-photos-box #awareness_events{
-    background-image: url("../assets/awareness_events.png");
+    background-image: url("../assets/awareness_events.jpg");
     background-size: contain;
-    height: 50vh;
+    height: 40vh;
     margin: 0px 10px;
-    width: calc(calc(975 * 50vh) / 512);
+    width: calc(calc(680 * 40vh) / 480);
     background-repeat: no-repeat;
 }
 .activities-photos-box #science_week{
-    background-image: url("../assets/science_week.png");
+    background-image: url("../assets/science_week.jpg");
     background-size: contain;
-    height: 50vh;
+    height: 40vh;
     margin: 0px 10px;
-    width: calc(calc(1521 * 50vh) / 512);
+    width: calc(calc(788 * 40vh) / 480);
+    background-repeat: no-repeat;
+}
+.activities-photos-box #sports_week{
+    background-image: url("../assets/sports_week.jpg");
+    background-size: contain;
+    height: 40vh;
+    margin: 0px 10px;
+    width: calc(calc(952 * 40vh) / 480);
     background-repeat: no-repeat;
 }
 .activities-photos-box .activities-cards .activity-name{
-    font-family: section-body-font;
+    font-family: var(--section-font);
     font-weight: bold;
-    margin: 0px;
+    margin: 5px 0px 10px 0px;
     padding: 10px 15px;
     background-color: whitesmoke;
     border: none;
 }
 
 .timeline-wrapper-box h2{
-    font-family: section-head-font;
+    font-family: var(--section-font);
 }
 .timeline-wrapper-box p{
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 .event-wrapper-box p, .timeline-wrapper-box h4{
     margin: 10px;
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 .timeline-box{
     padding: 0px 5px 0px 20px;
@@ -330,10 +335,10 @@ hr{
 }
 
 .contact-box h2{
-    font-family: section-head-font;
+    font-family: var(--section-font);
 }
 .contact-box p{
-    font-family: section-body-font;
+    font-family: var(--section-font);
 }
 
 .admission-enquiry-box{
@@ -341,7 +346,7 @@ hr{
     z-index: 999;
     margin: 0px;
     padding: 10px;
-    font-family: section-body-font;
+    font-family: var(--section-font);
     height: fit-content;
     width: 100%;
     bottom: 0px;
