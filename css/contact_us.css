@@ -96,6 +96,12 @@ body{
 .question-box .question:active{
     background-color: gray;
     color: whitesmoke;
+    outline: none;
+}
+.question-box .question:focus-visible{
+    background-color: none;
+    color: none;
+    outline: none;
 }
 .question-box .active{
     background-color: hsl(0, 0%, 90%);
