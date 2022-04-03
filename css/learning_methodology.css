@@ -18,6 +18,9 @@ body{
     width: 100vw;
     font-family: var(--section-font);
 }
+p, label{
+    font-size: 0.9rem;
+}
 
 .school-name-box{
     padding: 15px 10px;

@@ -33,6 +33,9 @@ body{
     color: var(--accent-color-bg);
     background-color: var(--accent-font-color);
 }
+p, label{
+    font-size: 0.9rem;
+}
 
 .school-name-box{
     padding: 15px 10px;

@@ -17,6 +17,11 @@ body{
     padding: 0px;
     width: 100vw;
 }
+p, label{
+    font-size: 0.9rem;
+    margin: 5px 0px;
+    display: block;
+}
 
 .school-name-box{
     padding: 15px 10px;

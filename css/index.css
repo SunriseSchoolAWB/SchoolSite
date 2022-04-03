@@ -37,13 +37,8 @@ body{
     color: var(--accent-color-bg);
     background-color: var(--accent-font-color);
 }
-.link-button-inline{
-    background-color: var(--accent-color-bg);
-    font-family: var(--section-font);
-    font-style: normal;
-    color: var(--accent-font-color);
-    padding: 2px 5px;
-    border-radius: 5px;
+p, label{
+    font-size: 0.9rem;
 }
 
 #school_name{
@@ -64,7 +59,7 @@ body{
     justify-content: center;
     text-align: center;
 }
-hr{
+.quote-box hr{
     width: 30%;
     height: 1.5px;
     align-self: center;
