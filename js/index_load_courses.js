@@ -1,8 +1,9 @@
 var today = new Date();
 today = (today.getMonth()+1)*100+today.getDate();
 
-document.getElementById("course-card-left-svg").style.setProperty("display", "none");
-document.getElementById("course-card-left-button").disabled = true;
+var next_course_interval_id = setInterval(function(){
+    document.getElementById("course-card-right-button").click();
+}, 4000);
 
 var course_upper_card = document.querySelector(".courses-box .course-upper-card");
 course_upper_card.addEventListener('transitionend', function() {

@@ -14,39 +14,25 @@ var month_list = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
 
 
 function selectCourse(dir){
+    clearInterval(next_course_interval_id);
     var current_course = document.getElementById("course-current-card");
     var current_course_name = current_course.getAttribute('name');
     var current_course_index = courses.indexOf(current_course_name);
-    if (current_course_index+dir >= 0 && current_course_index+dir < courses.length){
-        if (current_course_index+dir > 0){
-            document.getElementById("course-card-left-svg").style.setProperty("display", "inline-flex");
-            document.getElementById("course-card-left-button").disabled = false;
-        }
-        else{
-            document.getElementById("course-card-left-svg").style.setProperty("display", "none");
-            document.getElementById("course-card-left-button").disabled = true;
-        }
-        if (current_course_index+dir < courses.length-1){
-            document.getElementById("course-card-right-svg").style.setProperty("display", "inline-flex");
-            document.getElementById("course-card-right-button").disabled = false;
-        }
-        else{
-            document.getElementById("course-card-right-svg").style.setProperty("display", "none");
-            document.getElementById("course-card-right-button").disabled = true;
-        }
-        
-        var next_course = courses[current_course_index+dir];
-        current_course.setAttribute('name', next_course);
-        current_course.innerHTML = '<p>'+next_course+'</p>';
-        document.getElementById("course-current-class").innerText = course_info[next_course]["name"];
-        document.getElementById("course-current-age").innerText = course_info[next_course]["age"];
-        document.getElementById("course-current-card").style.setProperty('border-color', course_info[next_course]["color1"]);
-        document.getElementById("path902").style.setProperty('stroke', course_info[next_course]["color1"]);
-        document.getElementById("path901").style.setProperty('stroke', course_info[next_course]["color1"]);
-        document.getElementById("course-current-card").getElementsByTagName("p")[0].style.setProperty('color', course_info[next_course]["color1"]);
-        var course_upper_card = document.querySelector(".courses-box .course-upper-card");
-        course_upper_card.style.setProperty('background-image', 'linear-gradient(to left, '+course_info[next_course]["color2"]+' 50%, '+course_info[current_course_name]["color2"]+' 50%)');
-        course_upper_card.style.setProperty('transition','background-position 0.5s ease-out');
-        course_upper_card.style.setProperty('background-position-x', (dir*100).toString()+'%');
-    }
+    var next_course_index = (courses.length + (current_course_index + dir)) % (courses.length); 
+    var next_course = courses[next_course_index];
+    current_course.setAttribute('name', next_course);
+    current_course.innerHTML = '<p>'+next_course+'</p>';
+    document.getElementById("course-current-class").innerText = course_info[next_course]["name"];
+    document.getElementById("course-current-age").innerText = course_info[next_course]["age"];
+    document.getElementById("course-current-card").style.setProperty('border-color', course_info[next_course]["color1"]);
+    document.getElementById("path902").style.setProperty('stroke', course_info[next_course]["color1"]);
+    document.getElementById("path901").style.setProperty('stroke', course_info[next_course]["color1"]);
+    document.getElementById("course-current-card").getElementsByTagName("p")[0].style.setProperty('color', course_info[next_course]["color1"]);
+    var course_upper_card = document.querySelector(".courses-box .course-upper-card");
+    course_upper_card.style.setProperty('background-image', 'linear-gradient(to left, '+course_info[next_course]["color2"]+' 50%, '+course_info[current_course_name]["color2"]+' 50%)');
+    course_upper_card.style.setProperty('transition','background-position 0.5s ease-out');
+    course_upper_card.style.setProperty('background-position-x', (dir*100).toString()+'%');
+    next_course_interval_id = setInterval(function(){
+        document.getElementById("course-card-right-button").click();
+    }, 4000);
 }

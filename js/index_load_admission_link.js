@@ -7,5 +7,5 @@ admission_date = admission_period["end_date"].split("-");
 var admission_end_date = parseInt(admission_date[1])*100 + parseInt(admission_date[0]);
 
 if (today < admission_end_date && today > admission_start_date){
-    document.getElementsByClassName("admission-enquiry-box")[0].style.display = "flex";
+    document.getElementsByClassName("admission-enquiry-box")[0].setAttribute('style', `height: fit-content; display: flex;`);
 }
