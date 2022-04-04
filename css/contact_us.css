@@ -33,7 +33,7 @@ body{
     color: var(--accent-color-bg);
     background-color: var(--accent-font-color);
 }
-p, label{
+p, label, a{
     font-size: 0.9rem;
 }
 
@@ -132,9 +132,22 @@ border-left: 3px solid grey;
     font-family: var(--section-font);
 }
 
-.blank-bottom-box{
-height: 30vw;
-padding: 0px;
-margin: 0px;
-width: 100%;
+.website-info-bottom-box{
+    height: fit-content;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: var(--header-color);
+    color: white;
+    font-family: var(--section-font);
+}
+.website-info-bottom-box h4{
+    margin: 0px;
+    padding: 20px 0px;
+}
+.website-info-bottom-box a{
+    color: white;
+    font-size: 0.85rem;
+}
+.website-info-bottom-box a:active{
+    color: grey;
 }

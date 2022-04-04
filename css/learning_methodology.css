@@ -18,7 +18,7 @@ body{
     width: 100vw;
     font-family: var(--section-font);
 }
-p, label{
+p, label, a{
     font-size: 0.9rem;
 }
 
@@ -55,9 +55,22 @@ p, label{
     padding: 5px 5px 5px 10px;
 }
 
-.blank-bottom-box{
-    height: 30vw;
-    padding: 0px;
+.website-info-bottom-box{
+    height: fit-content;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: var(--header-color);
+    color: white;
+    font-family: var(--section-font);
+}
+.website-info-bottom-box h4{
     margin: 0px;
-    width: 100%;
+    padding: 20px 0px;
+}
+.website-info-bottom-box a{
+    color: white;
+    font-size: 0.85rem;
+}
+.website-info-bottom-box a:active{
+    color: grey;
 }
