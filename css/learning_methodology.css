@@ -74,3 +74,9 @@ p, label, a{
 .website-info-bottom-box a:active{
     color: grey;
 }
+.website-info-bottom-box p{
+    font-size: 0.85rem;
+}
+.website-info-bottom-box .copyright-notice{
+    font-size: 0.7rem;
+}
