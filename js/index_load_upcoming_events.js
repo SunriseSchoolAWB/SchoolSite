@@ -1,9 +1,25 @@
 function dateCompareForSort(a, b){
     var a_date = a["date"].split("-");
-    var a_date_int = parseInt(a_date[1])*100 + parseInt(a_date[0]);
+    if (a_date.length == 1){
+        var a_date_int = parseInt(a_date[0])*100;
+    }
+    if (a_date.length == 1 && a_date[0] == ""){
+        var a_date_int = 0;
+    }
+    else{
+        var a_date_int = parseInt(a_date[1])*100 + parseInt(a_date[0]);
+    }
 
     var b_date = b["date"].split("-");
-    var b_date_int = parseInt(b_date[1])*100 + parseInt(b_date[0]);
+    if (b_date.length == 1){
+        var b_date_int = parseInt(b_date[0])*100;
+    }
+    if (b_date.length == 1 && b_date[0] == ""){
+        var b_date_int = 0;
+    }
+    else{
+        var b_date_int = parseInt(b_date[1])*100 + parseInt(b_date[0]);
+    }
 
     return a_date_int - b_date_int;
 }
@@ -13,12 +29,20 @@ today = (today.getMonth()+1)*100+today.getDate();
 
 event_list.sort(dateCompareForSort);
 
+
 var upcoming_events_html = ``;
 event_list.forEach(element => {
     var event_date = element["date"].split("-");
-    var event_date_int = parseInt(event_date[1])*100 + parseInt(event_date[0]);
+    if (event_date.length == 2){
+        var event_date_int = parseInt(event_date[1])*100 + parseInt(event_date[0]);
+    }
+    if (event_date.length == 1 && event_date[0] != ""){
+        var event_date_int = parseInt(event_date[0])*100 + today%100;
+        event_date[1] = event_date[0];
+        event_date[0] = "Tentative in";
+    }
 
-    if (event_date_int > today && event_date_int < today+100){
+    if (event_date_int >= today && event_date_int < today+110){
 
         var event_date_str = event_date[0] +' '+ month_list[parseInt(event_date[1])-1];
 
