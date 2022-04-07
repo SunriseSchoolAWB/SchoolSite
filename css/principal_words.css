@@ -46,26 +46,27 @@ p, label, a{
 .principal-photo-box{
     margin: 0px;
     padding: 0px;
-    height: 250px;
+    height: fit-content;
     width: 100%;
-    background-image: url("../assets/playground.jpg");
+    background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    /* position: relative; */
 }
 .principal-photo-box div{
     margin: 0px;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     width: 100%;
     height: fit-content;
-    background-color: #00000077;
+    /* background-color: #00000077; */
 }
 .principal-photo-box h2{
     padding: 15px 0px 15px 15px;
     margin: 0px;
-    color: var(--header-font-color);
+    /* color: var(--header-font-color); */
+    color: black;
     font-family: var(--section-font);
 }
 
