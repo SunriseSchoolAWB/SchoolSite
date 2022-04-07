@@ -1,8 +1,1 @@
-var event_list = [
-    {'date': '10-03', 'name': 'Event 1', 'duration': '1', 'description': 'what do we do on this day'}, 
-    {'date': '10-04', 'name': 'Event 3', 'duration': '0', 'description': 'what do we do on this day'}, 
-    {'date': '31-03', 'name': 'Event 2', 'duration': '4', 'description': 'what do we do on this day'}, 
-    {'date': '21-04', 'name': 'Event 4', 'duration': '1', 'description': 'what do we do on this day'}, 
-    {'date': '30-04', 'name': 'Event 5', 'duration': '1', 'description': 'what do we do on this day'},
-    {'date': '04', 'name': 'Event 5', 'duration': '1', 'description': 'what do we do on this day'},
-]
+var event_list = [{'date': '01-05', 'name': 'Grammer Classes', 'duration': '15', 'description': 'To improve English speaking skills'}, {'date': '01-05', 'name': 'Phonics Classes', 'duration': '31', 'description': 'Learning to read English phonetically'}, {'date': '5', 'name': 'Bal Sanskar Camp', 'duration': '7', 'description': 'Fun activities, Art & Craft and Spiritual learning'}, {'date': '6', 'name': 'World Environment Day', 'duration': '1', 'description': 'Creating awareness for Environment'}, {'date': '21-06', 'name': 'World Yoga Day', 'duration': '1', 'description': 'Experiencing invaluable gift of India’s ancient tradition'}]
