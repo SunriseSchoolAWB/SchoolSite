@@ -29,6 +29,8 @@ today = (today.getMonth()+1)*100+today.getDate();
 
 event_list.sort(dateCompareForSort);
 
+var upcoming_events_limiter = 5;
+var upcoming_events_counter = 0;
 
 var upcoming_events_html = ``;
 event_list.forEach(element => {
@@ -41,8 +43,9 @@ event_list.forEach(element => {
         event_date[1] = event_date[0];
         event_date[0] = "Tentative in";
     }
+    if ((event_date.length == 1 && event_date[0] == "") || (upcoming_events_counter > upcoming_events_limiter)) return;
 
-    if (event_date_int >= today && event_date_int < today+110){
+    if ((today <= event_date_int && event_date_int < today+110) || (-1119 < (event_date_int-today) && (event_date_int-today) < -1089)){
 
         var event_date_str = event_date[0] +' '+ month_list[parseInt(event_date[1])-1];
 
@@ -66,6 +69,7 @@ event_list.forEach(element => {
             </div>
         </div>
         `;
+        upcoming_events_counter += 1;
     }
 });
 document.getElementsByClassName("timeline-box")[0].innerHTML = upcoming_events_html;
