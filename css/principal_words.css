@@ -22,19 +22,19 @@ p, label, a{
 }
 
 .school-name-box{
-    padding: 15px 10px;
+    padding: 10px;
     margin: 0px;
     height: fit-content;
     background-color: var(--header-color);
     font-family: var(--section-font);
+    display: flex;
+    align-items: center;
 }
 .school-name-box .school-logo{
-    display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    margin: 0px 5px;
 }
 .school-name-box .school-name{
-    display: inline-block;
     height: 100%;
     color: var(--header-font-color);
 }
