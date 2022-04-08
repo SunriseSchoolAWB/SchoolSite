@@ -151,7 +151,6 @@ p, label, a, li{
     font-family: var(--section-font);
 }
 .uniqueness-card{
-    width: 96%;
     display: flex;
     margin: 0px;
     overflow-x:auto;
@@ -236,7 +235,6 @@ p, label, a, li{
     font-family: var(--section-font);
 }
 .activities-photos-box{
-    width: 96%;
     display: flex;
     margin: 5px 0px;
     overflow-x: auto;
