@@ -176,15 +176,16 @@ p, label, a, li{
     }
 }
 .uniqueness-card .unique-cards{
-    min-width: 75vw;
-    height:fit-content;
+    width: fit-content;
+    height: fit-content;
     display: inline-block;
     vertical-align: top;
     margin: 0px;
     padding: 0px 5px;
 }
 .uniqueness-card ul{
-    padding: 0px;
+    padding: 5px 10px;
+    min-width: 65vw;
 }
 .uniqueness-card li{
     list-style: none;
@@ -209,35 +210,23 @@ p, label, a, li{
     margin: 0px;
     padding: 5px 0px;
 }
-#well_planned_classrooms{
-    background-image: url("../assets/well_planned_classrooms.jpeg");
+.uniqueness-card .card-photo{
     background-size: contain;
-    height: 40vh;
+    height: 35vh;
     margin: 0px;
-    width: calc(calc(720 * 40vh) / 720);
+    width: calc(calc(720 * 35vh) / 720);
     background-repeat: no-repeat;
     border: none;
     border-radius: 20px;
+}
+#well_planned_classrooms{
+    background-image: url("../assets/well_planned_classrooms.jpeg");
 }
 #fun_at_playground{
     background-image: url("../assets/playground.jpeg");
-    background-size: contain;
-    height: 40vh;
-    margin: 0px;
-    width: calc(calc(720 * 40vh) / 720);
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 20px;
 }
 #practical_learning{
     background-image: url("../assets/practical_learning.jpeg");
-    background-size: contain;
-    height: 40vh;
-    margin: 0px;
-    width: calc(calc(720 * 40vh) / 720);
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 20px;
 }
 
 .activities-box h2{
