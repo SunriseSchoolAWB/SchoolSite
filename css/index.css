@@ -207,7 +207,7 @@ p, label, a, li{
 .uniqueness-card h4, .uniqueness-card p, .uniqueness-card li{
     font-family: var(--section-font);
     margin: 0px;
-    padding: 5px 0px;
+    padding: 5px 0px 0px 0px;
 }
 .uniqueness-card .card-photo{
     background-size: contain;

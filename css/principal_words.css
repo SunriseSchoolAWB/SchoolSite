@@ -46,27 +46,27 @@ p, label, a{
 .principal-photo-box{
     margin: 0px;
     padding: 0px;
-    height: fit-content;
+    height: 250px;
     width: 100%;
-    background-image: none;
+    background-image: url("../assets/principal.jpeg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    /* position: relative; */
+    position: relative;
 }
 .principal-photo-box div{
     margin: 0px;
-    /* position: absolute;
+    position: absolute;
     left: 0;
-    bottom: 0; */
+    bottom: 0;
     width: 100%;
     height: fit-content;
-    /* background-color: #00000077; */
+    background-color: #00000077;
 }
 .principal-photo-box h2{
-    padding: 15px 0px 15px 15px;
+    padding: 5px 0px 5px 10px;
     margin: 0px;
-    /* color: var(--header-font-color); */
-    color: black;
+    color: var(--header-font-color);
     font-family: var(--section-font);
 }
 
