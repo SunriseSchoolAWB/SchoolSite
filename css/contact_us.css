@@ -109,15 +109,14 @@ border-left: 3px solid grey;
 
 .contact-link-box{
     height: fit-content;
-}
-.contact-link-box h3{
-    font-family: var(--section-font);
-}
-.contact-link-box p{
     font-family: var(--section-font);
 }
 .contact-link-box a{
     color: var(--accent-font-color);
+}
+
+.address-box{
+    font-family: var(--section-font);
 }
 
 .website-info-bottom-box{
