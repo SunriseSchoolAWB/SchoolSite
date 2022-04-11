@@ -111,7 +111,7 @@ border-left: 3px solid grey;
     height: fit-content;
     font-family: var(--section-font);
 }
-.contact-link-box a{
+.contact-link-box b{
     color: var(--accent-font-color);
 }
 

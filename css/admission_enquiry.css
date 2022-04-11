@@ -69,6 +69,9 @@ p, label, a{
 .admission-enquiry-box h3{
     font-family: var(--section-font);
 }
+.admission-enquiry-box b{
+    color: var(--accent-font-color);
+}
 
 .admission-box h3{
     font-family: var(--section-font);
