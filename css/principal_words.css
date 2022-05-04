@@ -29,6 +29,9 @@ p, label, a{
     font-family: var(--section-font);
     display: flex;
     align-items: center;
+    /* position: fixed;
+    z-index: 1;
+    top: 0px; */
 }
 .school-name-box .school-logo{
     height: 55px;
@@ -41,6 +44,11 @@ p, label, a{
 .school-name-box .school-name h4, .school-name-box .school-name h2{
     margin: 0px;
     padding: 2px;
+}
+
+.principal-words-box{
+    padding: 0px;
+    margin: 0px;
 }
 
 .principal-photo-box{
@@ -78,6 +86,31 @@ p, label, a{
 
 .word-box p{
     font-family: var(--section-font);
+}
+
+@media only screen and (min-width: 550px){
+    .principal-words-box{
+        display: flex;
+        padding: 0px 18vw;
+        margin: 0px;
+    }
+    .principal-photo-box{
+        margin: 30px;
+        padding: 0px;
+        height: 300px;
+        width: 49%;
+        border-radius: 20px;
+    }
+    .principal-photo-box div{
+        border-radius: 0px 0px 20px 20px;
+    }
+    .word-box{
+        padding: 10px;
+        margin: 0%;
+        border: none;
+        width: 49%;
+        height: fit-content;
+    }
 }
 
 .website-info-bottom-box{

@@ -36,3 +36,30 @@ function selectCourse(dir){
         document.getElementById("course-card-right-button").click();
     }, 4000);
 }
+
+function showScrollTop() {
+    const currentScrollPosition = window.pageYOffset; 
+    const elementOffsetTop = document.getElementById('quote').offsetTop;
+
+    if ( currentScrollPosition > (elementOffsetTop - 180)){
+        document.getElementsByClassName('website-header')[0].style.opacity = 100;
+    } else {
+        document.getElementsByClassName('website-header')[0].style.opacity = 0; 
+    }
+}
+
+window.addEventListener('scroll', showScrollTop);
+
+function setNegativeMargin(){
+    if (window.innerWidth > 550){
+        let school_svg_height = document.getElementById('school-svg').clientHeight;
+        document.getElementsByClassName('content-body')[0].style.marginTop = (school_svg_height*-0.43) + "px";
+    }
+    else{
+        document.getElementsByClassName('content-body')[0].style.marginTop = "0px";
+    }
+}
+
+window.addEventListener("load", setNegativeMargin);
+window.addEventListener("resize", setNegativeMargin);
+

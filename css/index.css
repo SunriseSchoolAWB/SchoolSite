@@ -41,13 +41,60 @@ p, label, a, li{
     font-size: 0.9rem;
 }
 
-#school_name{
+.website-header{
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 0.2s ease-out;
+}
+.school-name-box{
+    padding: 10px;
+    margin: 0px;
+    height: fit-content;
+    background-color: var(--header-color);
+    font-family: var(--section-font);
+    display: flex;
+    align-items: center;
+}
+.website-header .school-logo{
+    height: 55px;
+    margin: 0px 5px;
+}
+.website-header .school-name{
+    height: 100%;
+    color: var(--header-font-color);
+}
+.website-header .school-name h4, .website-header .school-name h2{
+    margin: 0px;
+    padding: 2px;
+}
+
+#school-svg{
     width: 100%;
 }
 
 .content-box{
     padding: 0% 5%;
     margin: 0%;
+}
+
+@media only screen and (min-width: 550px){
+    p, label, a, li{
+        font-size: 0.78rem;
+    }
+    #school-svg{
+        width: 100%;
+        content: url('../assets/school_name_desktop.svg');
+    }
+    .content-body{
+        margin: 0% 15%;
+        padding: 0%;
+        background: white;
+        border: none;
+        border-radius: 20px;
+    }
 }
 
 #quote{
@@ -155,6 +202,7 @@ p, label, a, li{
     margin: 0px;
     overflow-x:auto;
     padding: 0px 15px;
+    padding-bottom: 10px;
 }
 .uniqueness-card::-webkit-scrollbar{
     height: 5px;
@@ -171,7 +219,6 @@ p, label, a, li{
 @supports (scrollbar-color: red blue){
     .uniqueness-card{
         scrollbar-color: var(--accent-font-color) var(--accent-color-bg);
-        scrollbar-width: thin;
     }
 }
 .uniqueness-card .unique-cards{
@@ -217,6 +264,30 @@ p, label, a, li{
     background-repeat: no-repeat;
     border: none;
     border-radius: 20px;
+}
+@media only screen and (min-width: 550px){
+    .uniqueness-card ul{
+        padding: 5px 10px;
+        min-width: calc(calc(720 * 45vh) / 720);
+    }
+    .uniqueness-card .card-photo{
+        background-size: contain;
+        height: 45vh;
+        margin: 0px;
+        width: calc(calc(720 * 45vh) / 720);
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 20px;
+    }
+    .uniqueness-card::-webkit-scrollbar{
+        height: 10px;
+    }
+    .uniqueness-card::-webkit-scrollbar-track{
+        background-color: var(--accent-color-bg);
+        border-radius: 100vw;
+        border: 1px solid var(--accent-font-color);
+        margin: 0 20vw;
+    }
 }
 #well_planned_classrooms{
     background-image: url("../assets/well_planned_classrooms.jpeg");
@@ -297,6 +368,17 @@ p, label, a, li{
     background-color: whitesmoke;
     border: none;
 }
+@media only screen and (min-width: 550px){
+    .activities-photos-box::-webkit-scrollbar{
+        height: 10px;
+    }
+    .activities-photos-box::-webkit-scrollbar-track{
+        background-color: var(--accent-color-bg);
+        border-radius: 100vw;
+        border: 1px solid var(--accent-font-color);
+        margin: 0 20vw;
+    }
+}
 
 .timeline-wrapper-box h2{
     font-family: var(--section-font);
@@ -365,7 +447,6 @@ p, label, a, li{
     border: 0.8px solid var(--accent-font-color);
     border-radius: 20px 20px 0px 0px;
     font-weight: bold;
-    font-size: 0.85rem;
 }
 .admission-enquiry-box .admission-enquiry-btn{
     display: inline-block;
@@ -374,6 +455,16 @@ p, label, a, li{
     border: none;
     border-radius: 10px;
     box-shadow: 0px 5px 5px 1px rgb(0,0,0,0.2);
+}
+
+@media only screen and (min-width: 550px){
+    .admission-enquiry-box{
+        top: 0px;
+        right: 0px;
+        border-radius: 0px 0px 0px 20px;
+        padding: 10px;
+        width: fit-content;
+    }
 }
 
 .website-info-bottom-box{
