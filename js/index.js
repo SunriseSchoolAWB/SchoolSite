@@ -50,5 +50,15 @@ function showScrollTop() {
 
 window.addEventListener('scroll', showScrollTop);
 
+function setNegativeMargin(){
+    if (window.innerWidth > 550){
+        let school_svg_height = document.getElementById('school-svg').clientHeight;
+        document.getElementsByClassName('school-svg-box')[0].style.marginBottom = (school_svg_height*-0.43) + "px";
+    }
+    else{
+        document.getElementsByClassName('school-svg-box')[0].style.marginBottom = "0px";
+    }
+}
 
+window.addEventListener("resize", setNegativeMargin);
 
