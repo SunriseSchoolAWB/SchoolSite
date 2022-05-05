@@ -29,9 +29,12 @@ p, label, a{
     font-family: var(--section-font);
     display: flex;
     align-items: center;
-    /* position: fixed;
+}
+.school-name-sticky-box{
+    position: fixed;
     z-index: 1;
-    top: 0px; */
+    top: 0px;
+    width: 99%;
 }
 .school-name-box .school-logo{
     height: 55px;
