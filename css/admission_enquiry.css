@@ -71,6 +71,19 @@ p, label, a{
     border: none;
     font-family: var(--section-font);
 }
+.content-body{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (min-width: 550px){
+    p, label, a, li{
+        font-size: 0.8rem;
+    }
+    .content-body{
+        padding: 0% 17%;
+    }
+}
 
 .admission-enquiry-box h3{
     font-family: var(--section-font);

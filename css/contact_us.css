@@ -55,7 +55,19 @@ p, label, a{
     margin: 0%;
     border: none;
 }
+.content-body{
+    margin: 0px;
+    padding: 0px;
+}
 
+@media only screen and (min-width: 550px){
+    p, label, a, li{
+        font-size: 0.8rem;
+    }
+    .content-body{
+        padding: 0% 17%;
+    }
+}
 .faqs-box h3{
     font-family: var(--section-font);
 }

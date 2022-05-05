@@ -82,14 +82,14 @@ p, label, a, li{
 
 @media only screen and (min-width: 550px){
     p, label, a, li{
-        font-size: 0.78rem;
+        font-size: 0.8rem;
     }
     #school-svg{
         width: 100%;
         content: url('../assets/school_name_desktop.svg');
     }
     .content-body{
-        margin: 0% 15%;
+        margin: 0% 17%;
         padding: 0%;
         background: white;
         border: none;
